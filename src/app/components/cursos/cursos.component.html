@@ -1,0 +1,42 @@
+<div class="fh5co-content-inner">
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        Cursos con certificados realizados en
+        <a href="https://www.educacionit.com/" target="_blank">EducacionIT</a>:
+      </p>
+    </div>
+    <ul class="fh5co-social">
+      <li *ngFor="let item of cursosEIT">
+        <a><i class="icon-chevron-circle-right"></i> El {{ item.fecha }} finalice el curso de {{ item.nombre }}</a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="row">
+      <div class="col-md-12">
+        <p>
+          Cursos con certificados realizados en
+          <a href="https://www.google.es/landing/activate/home/" target="_blank">Google Activate</a>:
+        </p>
+      </div>
+      <ul class="fh5co-social">
+        <li *ngFor="let item of cursosGA">
+          <a><i class="icon-chevron-circle-right"></i> El {{ item.fecha }} finalice el curso de {{ item.nombre }}</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+          <p>
+            Cursos con certificados realizados en otras instituciones:
+          </p>
+        </div>
+        <ul class="fh5co-social">
+          <li *ngFor="let item of cursosOtros">
+            <a><i class="icon-chevron-circle-right"></i> El {{ item.fecha }} finalice el curso de {{ item.nombre }} en {{ item.institucion }}</a>
+          </li>
+        </ul>
+      </div>
+</div>

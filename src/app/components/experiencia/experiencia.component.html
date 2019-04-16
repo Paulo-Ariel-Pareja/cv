@@ -1,0 +1,22 @@
+<div class="fh5co-content-inner">
+  <div class="row">
+    <div class="col-md-12">
+
+      <p>Cuento con la siguiente experiencia laboral:</p>
+
+      <div class="fh5co-feature" *ngFor="let item of experiencia">
+        <div class="fh5co-icon">
+          <i class="icon-black-tie"></i>
+        </div>
+        <div class="fh5co-text">
+          <h2>{{ item.desde }} - {{ item.hasta }}</h2>
+          <h3>{{ item.empresa }} <p>({{ item.rubro }})</p></h3>
+          <h4>Cargo: <p>{{ item.cargo }}</p></h4>
+          <h4>Breve detalle de tareas: <p>{{ item.descripcion }}</p></h4>
+          <h4>Motivo de renuncia: <small>{{ item.motivo }}</small></h4>
+          <hr>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
