@@ -22,7 +22,7 @@ export class ExperienciaComponent implements OnInit {
       rubro: "Comercial",
       cargo: "Desarrollador / Administrativo",
       descripcion: "Desarrollador en Java, Angular y en Visual Basic for Applications. Realización de inventarios y responsable de seguimientos de estos.",
-      motivo: ''
+      motivo: 'Actualmente trabajando.'
     };
     this.experiencia.push(exp1);
     let exp2: Experiencia = {
